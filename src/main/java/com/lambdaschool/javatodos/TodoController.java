@@ -42,6 +42,7 @@ public class TodoController {
         return usersRepo.findAll();
     }
 
+    @ApiOperation(value = "Returns a single user based on supplied user id {userid}. Returns null if not found.", response = Todo.class)
     @GetMapping("/users/userid/{userid}")
     public Users getUserByID(@PathVariable int userid) {
         Optional<Users> usersById = usersRepo.findById(userid);
@@ -96,6 +97,7 @@ public class TodoController {
         return todoRepo.findAll();
     }
 
+    @ApiOperation(value = "Returns a single todo based on supplied todo id {todoid}. Returns null if not found.", response = Todo.class)
     @GetMapping("/todos/todoid/{todoid}")
     public Todo getTodoByID(@PathVariable int todoid) {
         Optional<Todo> todoById = todoRepo.findById(todoid);
