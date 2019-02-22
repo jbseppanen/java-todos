@@ -23,12 +23,12 @@ The table layouts are as follows:
   
 Expose the following end points
 
-* GET /users - returns all the users
-* GET /todos - return all the todos
+* GET /users - returns all the users*
+* GET /todos - return all the todos*
 
-* GET /users/userid/{userid} - return the user based off of the user id
-* GET /users/username/{username} - return the user based off of the user name
-* GET /todos/todoid/{todoid} - return the todo based off of the todo id
+* GET /users/userid/{userid} - return the user based off of the user id*
+* GET /users/username/{username} - return the user based off of the user name*
+* GET /todos/todoid/{todoid} - return the todo based off of the todo id*
 
 * GET /todos/users - return a listing of the todos with its assigned user's name
 * GET /todos/active - return a listing of the todos not yet completed.

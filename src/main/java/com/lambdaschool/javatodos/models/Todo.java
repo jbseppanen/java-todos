@@ -4,7 +4,11 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Date;
+import java.util.GregorianCalendar;
+import java.util.Locale;
 
 @Data @NoArgsConstructor
 @Entity
@@ -16,11 +20,12 @@ public class Todo {
 
     private String description;
 
-    private Date datestarted;
+    private String datestarted;
 
     private int completed;
 
     @ManyToOne
     @JoinColumn(name = "userid", nullable = false)
     private Users user;
+
 }
