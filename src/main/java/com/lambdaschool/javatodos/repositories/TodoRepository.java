@@ -10,4 +10,8 @@ public interface TodoRepository extends JpaRepository<Todo, Integer> {
    @Query(value = "SELECT users.username, todo.todoid, todo.description, todo.datestarted, todo.completed FROM users" +
            " JOIN todo ON users.userid = todo.userid", nativeQuery = true)
     List<Object[]> userWithTodos();
+
+   List<Todo> getByCompletedEquals(int completed);
+
+   List<Todo> getByUser_Userid(int userid);
 }
