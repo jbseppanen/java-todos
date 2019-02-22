@@ -23,24 +23,24 @@ The table layouts are as follows:
   
 Expose the following end points
 
-* GET /users - returns all the users
-* GET /todos - return all the todos
+* GET /users - returns all the users*
+* GET /todos - return all the todos*
 
-* GET /users/userid/{userid} - return the user based off of the user id
-* GET /users/username/{username} - return the user based off of the user name
-* GET /todos/todoid/{todoid} - return the todo based off of the todo id
+* GET /users/userid/{userid} - return the user based off of the user id*
+* GET /users/username/{username} - return the user based off of the user name*
+* GET /todos/todoid/{todoid} - return the todo based off of the todo id*
 
-* GET /todos/users - return a listing of the todos with its assigned user's name
-* GET /todos/active - return a listing of the todos not yet completed.
+* GET /todos/users - return a listing of the todos with its assigned user's name*
+* GET /todos/active - return a listing of the todos not yet completed.*
 
-* POST /users - adds a user
-* POST /todos - adds a todo
+* POST /users - adds a user*
+* POST /todos - adds a todo*
 
-* PUT /users/userid/{userid} - updates a user based on userid
-* PUT /todos/todoid/{todoid} - updates a todo based on todoid
+* PUT /users/userid/{userid} - updates a user based on userid*
+* PUT /todos/todoid/{todoid} - updates a todo based on todoid*
 
-* DELETE /users/userid/{userid} - Deletes a user based off of their userid and deletes all their associated todos
-* DELETE /todos/todoid/{todoid} - deletes a todo based off its todoid
+* DELETE /users/userid/{userid} - Deletes a user based off of their userid and deletes all their associated todos*
+* DELETE /todos/todoid/{todoid} - deletes a todo based off its todoid*
 
 * Add Swagger Documentation to your REST APIs
   * Add custom responses to each of the follow error conditions
